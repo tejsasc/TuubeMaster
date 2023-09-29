@@ -26,7 +26,6 @@ const ClientDashBoard = () => {
       },
       8000
     );
-    console.log("----response--clients--->", response.status);
     if (response.status !== 200) {
       // setIsLoadingData(false);
       // setWarehouses([]);

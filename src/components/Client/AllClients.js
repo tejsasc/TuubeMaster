@@ -36,7 +36,7 @@ const AllClients = (props) => {
       setFetchErr("Some Problem Occured Please try again");
       return;
     }
-    totalRows.current = response.count;
+    totalRows.current = response.data?.count;
     setClients(response.data.results);
     setIsLoadingData(false);
     props.setRefreshTable(false);

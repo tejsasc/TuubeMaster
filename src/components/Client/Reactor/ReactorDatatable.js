@@ -37,7 +37,7 @@ const ReactorDatatable = (props) => {
       setFetchErr("Some Problem Occurred Please try again");
       return;
     }
-    totalRows.current = response.data.length;
+    totalRows.current = response.data?.count;
     setEquipData(response.data.results);
     setIsLoadingData(false);
   };

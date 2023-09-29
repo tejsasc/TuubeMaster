@@ -128,7 +128,7 @@ const AllWarehouses = () => {
     //   // throw new Error("API call failed with status code " + response.status);
     //   setErr("API call failed with status code ");
     // }
-    totalRows.current = response.count;
+    totalRows.current = response.data?.count;
     setWarehouses(response.data.results);
     setIsLoadingData(false);
     setRefreshTable(false);
